@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e8eaee;
+  min-height: 100%;
+}
+
+.nav_container {
+  /* border: 2px dashed salmon; */
+  background-color: #222831;
+  position: sticky;
+  z-index: 100;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px dashed white; */
+  padding: 0.5rem 1.5rem;
+  margin: 0px 20px;
+}
+
+.navbar > * {
+  font-size: 1rem;
+  color: #eeeeee;
+}
+.logo {
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+}
+
+.f_container {
+  width: 100%;
+  background-color: #222831;
+  bottom: 0;
+  color: #eeeeee;
+  padding: 0.6rem;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* eform  */
+
+.sec_eform {
+  /* border: 1.5px dashed red; */
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.g_cont {
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 1.1px 2.2px 2.2px rgba(0, 0, 0, 0.07),
+    2.7px 5.3px 5.3px rgba(0, 0, 0, 0.05), 5px 10px 10px rgba(0, 0, 0, 0.04),
+    8.9px 17.9px 17.9px rgba(0, 0, 0, 0.032),
+    16.7px 33.4px 33.4px rgba(0, 0, 0, 0.025),
+    40px 80px 80px rgba(0, 0, 0, 0.017);
+  overflow: hidden;
+  margin: 0px 20px;
+}
+
+.eform_cont {
+  display: flex;
+}
+
+.company_info {
+  min-width: 320px;
+  background-color: #56cb79;
+  padding: 2rem;
+  font-size: 0.8rem;
+}
+
+.c_head > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.9rem;
+}
+.c_head > h5 {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.c_item {
+  display: flex;
+  /* border: 1px dotted white; */
+  align-items: center;
+  width: 100%;
+  padding-bottom: 1.1rem;
+}
+
+.c_icon {
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c_icon i {
+  padding: 0.8rem;
+}
+
+.eform {
+  width: 100%;
+  padding: 2rem 3rem;
+  background-color: white;
+}
+
+.eform h2 {
+  margin-bottom: 0.9rem;
+}
+
+.form_row {
+  /* border: 1px dashed black; */
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+
+.one,
+.two {
+  flex: 0 0 48%;
+}
+.form_item {
+  width: 100%;
+  position: relative;
+}
+
+.form_box {
+  width: 100%;
+  padding: 0.8rem 0rem;
+  /* background-color: #e8eaee; */
+  border: none;
+  border-bottom: 1px solid #e8eaee;
+}
+
+.form_box:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #56cb79;
+}
+
+.form_box::placeholder {
+  color: #a9afb4;
+}
+
+.submit {
+  /* justify-content: center; */
+  padding-top: 1rem;
+}
+.btn {
+  padding: 0.7rem 2rem;
+  background-color: #56cb79;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid #56cb79;
+  color: #56cb79;
+}
+
+.d_image {
+  height: 300px;
+  width: 300px;
+}
+.d_image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .eform_cont {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .form_row {
+    display: flex;
+    flex-direction: column;
+  }
+  .submit {
+    width: 50%;
+    margin: auto;
+  }
+}
+.form_item i {
+  position: absolute;
+  right: 10px;
+  bottom: 35px;
+  visibility: hidden;
+}
+.form_item small {
+  visibility: hidden;
+}
+
+.form_item.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form_item.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+.form_item.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.exist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem 0rem;
+}
